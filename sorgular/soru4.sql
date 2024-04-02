@@ -1,0 +1,3 @@
+SELECT ad, soyad, maas 
+FROM CALISANLAR
+WHERE maas = (SELECT MAX(maas) FROM CALISANLAR)
